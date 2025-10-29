@@ -1,0 +1,77 @@
+{
+  "common": {
+    "appName": "Manager de Sarcini Pro",
+    "ok": "OK",
+    "cancel": "Anulează",
+    "save": "Salvează",
+    "delete": "Șterge",
+    "edit": "Editează",
+    "add": "Adaugă",
+    "search": "Caută",
+    "filter": "Filtrează",
+    "sort": "Sortează",
+    "loading": "Se încarcă...",
+    "error": "Eroare",
+    "success": "Succes",
+    "confirm": "Confirmă",
+    "yes": "Da",
+    "no": "Nu"
+  },
+  "auth": {
+    "signIn": "Autentificare",
+    "signUp": "Înregistrare",
+    "signOut": "Deconectare",
+    "email": "Email",
+    "password": "Parolă",
+    "forgotPassword": "Ai uitat parola?",
+    "resetPassword": "Resetează Parola",
+    "googleSignIn": "Autentificare cu Google",
+    "welcomeBack": "Bine ai revenit!",
+    "createAccount": "Creează Cont"
+  },
+  "tasks": {
+    "title": "Sarcini",
+    "createTask": "Creează Sarcină",
+    "editTask": "Editează Sarcina",
+    "taskTitle": "Titlu Sarcină",
+    "taskDescription": "Descriere",
+    "dueDate": "Data Scadentă",
+    "priority": "Prioritate",
+    "labels": "Etichete",
+    "attachments": "Atașamente",
+    "assignTo": "Atribuie către",
+    "recurring": "Recurentă",
+    "status": "Status",
+    "completed": "Completată",
+    "pending": "În așteptare",
+    "inProgress": "În progres",
+    "overdue": "Întârziată"
+  },
+  "dashboard": {
+    "title": "Tablou de Bord",
+    "overview": "Prezentare Generală",
+    "totalTasks": "Total Sarcini",
+    "completedTasks": "Completate",
+    "pendingTasks": "În așteptare",
+    "overdueTasks": "Întârziate",
+    "completionRate": "Rata de Completare",
+    "productivity": "Tendințe de Productivitate"
+  },
+  "calendar": {
+    "title": "Calendar",
+    "month": "Lună",
+    "week": "Săptămână",
+    "day": "Zi",
+    "today": "Astăzi"
+  },
+  "settings": {
+    "title": "Setări",
+    "profile": "Profil",
+    "theme": "Temă",
+    "language": "Limbă",
+    "notifications": "Notificări",
+    "security": "Securitate",
+    "integrations": "Integrări",
+    "about": "Despre"
+  }
+}

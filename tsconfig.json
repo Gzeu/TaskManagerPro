@@ -1,21 +1,30 @@
 {
   "extends": "@react-native/typescript-config/tsconfig.json",
   "compilerOptions": {
-    "target": "ESNext",
-    "lib": ["ES2021"],
-    "jsx": "react-native",
-    "module": "commonjs",
-    "moduleResolution": "node",
+    "target": "ES2020",
+    "module": "ESNext",
+    "lib": ["ES2020", "DOM"],
+    "allowJs": true,
+    "jsx": "react-jsx",
+    "declaration": true,
+    "outDir": "./lib",
     "strict": true,
     "noImplicitAny": true,
     "strictNullChecks": true,
+    "strictFunctionTypes": true,
+    "noImplicitReturns": true,
+    "noFallthroughCasesInSwitch": true,
+    "noUncheckedIndexedAccess": false,
+    "noImplicitOverride": true,
+    "moduleResolution": "node",
+    "allowSyntheticDefaultImports": true,
     "esModuleInterop": true,
     "skipLibCheck": true,
     "resolveJsonModule": true,
     "isolatedModules": true,
-    "allowSyntheticDefaultImports": true,
+    "noEmit": true,
     "forceConsistentCasingInFileNames": true,
-    "baseUrl": "./",
+    "baseUrl": ".",
     "paths": {
       "@/*": ["src/*"],
       "@components/*": ["src/components/*"],
@@ -23,13 +32,35 @@
       "@navigation/*": ["src/navigation/*"],
       "@services/*": ["src/services/*"],
       "@store/*": ["src/store/*"],
-      "@utils/*": ["src/utils/*"],
       "@types/*": ["src/types/*"],
+      "@utils/*": ["src/utils/*"],
       "@hooks/*": ["src/hooks/*"],
-      "@assets/*": ["src/assets/*"],
-      "@config/*": ["src/config/*"]
-    }
+      "@contexts/*": ["src/contexts/*"],
+      "@config/*": ["src/config/*"],
+      "@assets/*": ["src/assets/*"]
+    },
+    "typeRoots": [
+      "node_modules/@types",
+      "src/types"
+    ]
   },
-  "include": ["src/**/*", "index.js", "App.tsx"],
-  "exclude": ["node_modules", "babel.config.js", "metro.config.js", "jest.config.js"]
+  "include": [
+    "src/**/*",
+    "index.js",
+    "App.tsx",
+    "__tests__/**/*",
+    "e2e/**/*"
+  ],
+  "exclude": [
+    "node_modules",
+    "lib",
+    "android",
+    "ios",
+    "coverage",
+    "**/*.spec.ts",
+    "**/*.test.ts"
+  ],
+  "ts-node": {
+    "esm": true
+  }
 }
